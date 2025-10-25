@@ -1,0 +1,42 @@
+{
+	"name": "typescript-lib-starter",
+	"version": "1.0.0",
+	"description": "Starter for ts libs by Lumen Sinthetic",
+	"main": "dist/index.cjs",
+	"module": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"build": "sh ./scripts/build.sh",
+		"clean": "rm -rf dist",
+		"lint": "biome check",
+		"format": "biome format --write .",
+		"tscheck": "sh ./scripts/tscheck.sh",
+		"postinstall": "lefthook install",
+		"prepublish": "sh ./scripts/build.sh",
+		"publish": "release-it"
+	},
+	"author": "Lumen Sinthetic",
+	"license": "MIT",
+	"keywords": [],
+	"maintainers": [
+		{
+			"name": "Lumen Sinthetic",
+			"email": "vadimsi2105@gmail.com",
+			"url": "https://github.com/lumen-sinthetic"
+		}
+	],
+	"devDependencies": {
+		"@biomejs/biome": "^2.2.6",
+		"@types/react": "^19.2.2",
+		"@types/react-dom": "^19.2.2",
+		"lefthook": "^1.13.6",
+		"release-it": "^19.0.5",
+		"tsup": "^8.5.0",
+		"typescript": "^5.9.3"
+	},
+	"peerDependencies": {
+		"react": ">=18.0.0",
+		"react-dom": ">=18.0.0"
+	},
+	"packageManager": "pnpm@10.12.1"
+}
