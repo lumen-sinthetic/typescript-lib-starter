@@ -15,7 +15,7 @@
     "indentStyle": "space",
     "indentWidth": 2,
     "lineEnding": "lf",
-    "lineWidth": 150,
+    "lineWidth": 80,
     "attributePosition": "multiline"
   },
   "linter": {
@@ -33,7 +33,8 @@
     "formatter": {
       "quoteStyle": "double",
       "bracketSpacing": true,
-      "bracketSameLine": true
+      "bracketSameLine": true,
+      "trailingCommas": "es5"
     }
   },
 
